@@ -9,25 +9,25 @@ static struct Config config = {
 	.border_color = "#3465a4",
 
 	/* geometry and gravity (see the manual) */
-	.geometryspec = "0x0+0+0",
+	.geometryspec = "500x0-20+20",
 	.gravityspec = "NE",
 
 	/* size of border, gaps and image (in pixels) */
 	.border_pixels = 2,
 	.gap_pixels = 7,
-	.image_pixels = 80,     /* if 0, the image will fit the notification */
-	.leading_pixels = 5,    /* space between title and body texts */
-	.padding_pixels = 10,   /* space around content */
-	.max_height = 300,      /* maximum height of a notification, after text wrapping */
+	.image_pixels = 100,     /* if 0, the image will fit the notification */
+	.leading_pixels = 10,    /* space between title and body texts */
+	.padding_pixels = 20,   /* space around content */
+	.max_height = 600,      /* maximum height of a notification, after text wrapping */
 
 	/* text alignment, set to LeftAlignment, CenterAlignment or RightAlignment */
 	.alignment = LeftAlignment,
 
 	/* set to nonzero to shrink notification width to its content size */
-	.shrink = 0,
+	.shrink = 1,
 
 	/* whether to wrap text */
-	.wrap = 0,
+	.wrap = 1,
 
 	/* time, in seconds, for a notification to stay alive */
 	.sec = 10,
